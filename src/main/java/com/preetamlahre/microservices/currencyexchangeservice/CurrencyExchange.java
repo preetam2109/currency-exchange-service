@@ -2,6 +2,7 @@ package com.preetamlahre.microservices.currencyexchangeservice;
 
 import java.math.BigDecimal;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,6 +17,8 @@ public class CurrencyExchange {
 	private String to;
 	private BigDecimal conversionMultiple;
 	public String environment;
+
+
 	
 	public CurrencyExchange() {
 		super();
@@ -27,6 +30,7 @@ public class CurrencyExchange {
 		this.to = to;
 		this.conversionMultiple = conversionMultiple;
 	}
+
 	
 	public String getEnvironment() {
 		return environment;
@@ -34,6 +38,7 @@ public class CurrencyExchange {
 	public void setEnvironment(String environment) {
 		this.environment = environment;
 	}
+
 	public Long getId() {
 		return id;
 	}
